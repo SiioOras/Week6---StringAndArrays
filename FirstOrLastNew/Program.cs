@@ -18,8 +18,19 @@ namespace FirstOrLastNew
 
             int firstNameLenght = firstName.Length;
             int lastNameLenght = lastName.Length;
-            
-            Console.WriteLine($"Sinu eesnimes on {firstNameLenght} sümbolit ja perekonnanimes on {lastNameLenght} sümbolit.");
+
+            if (firstNameLenght>lastNameLenght)
+            {
+                Console.WriteLine($"Su eesnimi on pikem kui perekonnanimi.");
+            }
+            else if (firstNameLenght<lastNameLenght)
+            {
+                Console.WriteLine($"Su perekonnanimi on pikem kui eesnimi.");
+            }
+            else
+            {
+                Console.WriteLine($"Su eesnimi ja perekonnanimi on ühepikkused!");
+            }
         }
     }
 }
